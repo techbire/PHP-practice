@@ -20,27 +20,59 @@ echo let,"\n";
 
 
 
-//calc
-$num1=readline("enter your first number: ");
-$num2=readline("enter your second number: ");
-$op=readline("enter the operation (+,-,*,/,%,**)");
-if(!is_numeric($num1)&&!is_numeric($num2)){
-    echo"enter the integer value";
-}
-switch($op){
-    case'+':$result=$num1+$num2;
-    break;
-    case'-':$result=$num1-$num2;
-    break;
-    case'*':$result=$num1*$num2;
-    break;
-    case'/':$result=$num1/$num2;
-    break;
-    case'%':$result=$num1%$num2;
-    break;
-    case'**':$result=$num1**$num2;
-    break;
+// //calc
+// $num1=readline("enter your first number: ");
+// $num2=readline("enter your second number: ");
+// $op=readline("enter the operation (+,-,*,/,%,**)");
+// if(!is_numeric($num1)&&!is_numeric($num2)){
+//     echo"enter the integer value";
+// }
+// switch($op){
+//     case'+':$result=$num1+$num2;
+//     break;
+//     case'-':$result=$num1-$num2;
+//     break;
+//     case'*':$result=$num1*$num2;
+//     break;
+//     case'/':$result=$num1/$num2;
+//     break;
+//     case'%':$result=$num1%$num2;
+//     break;
+//     case'**':$result=$num1**$num2;
+//     break;
 
+// }
+// echo"result:",$result;
+
+
+
+//tableprinting
+$tablenum=5;
+for($i=1;$i<=10;$i++){
+    echo $tablenum,"*",$i,"=",($tablenum*$i),"\n";
 }
-echo"result:",$result;
+
+
+// //check number 
+// $num1=readline("enter your number: ");
+// if(!is_numeric($num1)){
+//     echo "this is not a number";
+// }
+// else{
+// if($num1>0){
+//     echo"positive number";
+// }
+// elseif($num1<0){
+//     echo"negative number";
+// }
+// else{echo"equal to 0";}
+// }
+
+$str="hello bhaiya\n";
+echo $str;
+echo "the string length is: ",strlen($abc);
+
+
+
+
 ?>
