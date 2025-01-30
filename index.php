@@ -94,56 +94,6 @@
 
 
 
-// // Example of function with one parameter
-// function let($a) {
-//     echo "Hello, this is the $a function.\n";
-// }
-// $vari = "Hello student, welcome to EARTH-5.";
-// let("example");
-
-
-
-
-// // Example of function with two parameters
-// function letWithTwoParams($a, $b) {
-//     echo "Hello, this is the $a function with value $b.\n";
-// }
-// letWithTwoParams("hello", 100);
-
-
-
-
-
-// // Example of function with string and integer parameters
-// function letWithDynamicParams($a, $b) {
-//     echo "$a $b\n";
-// }
-// $vari = "Hello student, welcome to EARTH-5.";
-// letWithDynamicParams($vari, 100);
-
-// wawad
-
-
-
-// // Example of passing variables by reference
-// function letByReference(&$a, $b) {
-//     echo "$a $b%\n";
-// };
-// $vari = "Hello student, welcome to EARTH-5.";
-// letByReference($vari, 100);
-
-
-
-
-
-// // Function with default parameter values
-// function hello($a = "Hey", $b = "LPU") {
-//     echo "$a $b\n";
-// }
-// hello();
-// hello("Hi", "Lovely Professional University");
-
-
 
 
 
@@ -231,29 +181,50 @@
 
 
 
-
 //Show day of the week using switch
 
-$num=readline("Enter your number: ");
+// $num=readline("Enter your number: ");
 
-switch($num){
-    case'1':$result="Sunday";
-    break;
-    case'2':$result="Monday";
-    break;
-    case'3':$result="Tuesday";
-    break;
-    case'4':$result="Wednesday";
-    break;
-    case'5':$result="Thursday";
-    break;
-    case'6':$result="Friday";
-    break;
-    case'7':$result="Saturday";
-    break;
+// switch($num){
+//     case'1':$result="Sunday";
+//     break;
+//     case'2':$result="Monday";
+//     break;
+//     case'3':$result="Tuesday";
+//     break;
+//     case'4':$result="Wednesday";
+//     break;
+//     case'5':$result="Thursday";
+//     break;
+//     case'6':$result="Friday";
+//     break;
+//     case'7':$result="Saturday";
+//     break;
     
-}
-echo"Result:",$result;
+// }
+// echo"Result:",$result;
+
+
+
+
+
+
+//Factorial
+// $num=readline("Enter your number: ");
+// $factorial=1;
+// while($num>0){
+// $factorial*=$num;
+// $num--;
+// }
+// echo $factorial;
+
+
+
+
+//Eligible ot
+
+
 
 
 ?>
+                                                                                                                       
