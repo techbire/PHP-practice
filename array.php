@@ -12,4 +12,11 @@ sort($a);
 echo "Sorted Array: ";
 print_r($a);
 
+$sum=0;
+for($i=0;$i<4;$i++){
+    $sum+=$a[$i];
+}
+
+echo "Sum: ",$sum;
+
 ?>
