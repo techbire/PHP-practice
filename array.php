@@ -19,4 +19,15 @@ for($i=0;$i<4;$i++){
 
 echo "Sum: ",$sum;
 
+//associative array
+$data=[
+    ['name'=>'php',
+    'roll no'=>'37',
+    'class'=>'btech',
+]
+];
+print_r($data);
+
+
+
 ?>
