@@ -31,35 +31,66 @@
 // //pre tag is used in echo for format like terminal identation
 
 
-//printing the table
+
+
+
+
+
+
+// //printing the table
+// $data=[
+//         ['Student','Mark-1','Mark-2','Mark-3'],
+//         ['ansh','54','80','78'],
+//         ['ansh','54','80','78'],
+//         ['ansh','54','80','78'],
+//         ['ansh','54','80','78']
+// ];
+
+// echo "<table border='2' cellpadding='5' align='center' style='font-size:40px'>";
+
+//     echo"<th colspan='5' bgcolor='red'>"."STUDENT MARK-SHEET";
+//     echo"</th>";
+
+//     foreach($data as $newvar){
+//         echo"<tr>";
+//         foreach($newvar as $value){
+//             echo"<td>";
+//             print_r($value);
+//             echo"</td>";
+//         }
+//         echo"</tr>";
+//     }
+// echo"</table>";
+
+
+
+
+
+
+
+//employee table
 $data=[
-        ['Student','Mark-1','Mark-2','Mark-3'],
-        ['ansh','54','80','78'],
-        ['ansh','54','80','78'],
-        ['ansh','54','80','78'],
-        ['ansh','54','80','78']
+    [' ','Male employees','Female employees','Total employees','Factories'],
+    ['1851','33','34','67','4'],
+    ['1861','33','34','67','4'],
+    ['1871','33','34','67','4'],
+    ['1881','33','34','67','4'],
+    ['1891','33','34','67','4'],
+    ['1901','33','34','67','4'],
 ];
 
-echo "<table border='2' cellpadding='5' align='center' style='font-size:40px'>";
 
-    echo"<th colspan='5' bgcolor='red'>"."STUDENT MARK-SHEET";
-    echo"</th>";
+echo "<table border='2' cellpadding='8' style='font-size:40px'>";
 
     foreach($data as $newvar){
-        echo"<tr>";
+        echo"<tr >";
         foreach($newvar as $value){
-            echo"<td>";
+            echo"<td style='font-size:40px; text-align: center;'>";
             print_r($value);
             echo"</td>";
         }
         echo"</tr>";
     }
 echo"</table>";
-
-
-
-
-
-
 
 ?>
