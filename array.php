@@ -33,7 +33,7 @@
 
 //printing the table
 $data=[
-    
+        ['Student','Mark-1','Mark-2','Mark-3'],
         ['ansh','54','80','78'],
         ['ansh','54','80','78'],
         ['ansh','54','80','78'],
