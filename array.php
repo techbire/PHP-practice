@@ -1,32 +1,64 @@
 <?php
-$second=array("hello","ansh","and","harsh");
-$first=["hey","b.tech","year"];
-print_r(array_merge($first,$second));
+// $second=array("hello","ansh","and","harsh");
+// $first=["hey","b.tech","year"];
+// print_r(array_merge($first,$second));
 
-$a = array(22, 13, 43, 5);
+// $a = array(22, 13, 43, 5);
 
-echo "Max: " . max($a) . "\n";
-echo "Min: " . min($a) . "\n";
+// echo "Max: " . max($a) . "\n";
+// echo "Min: " . min($a) . "\n";
 
-sort($a);
-echo "Sorted Array: ";
-print_r($a);
+// sort($a);
+// echo "Sorted Array: ";
+// print_r($a);
 
-$sum=0;
-for($i=0;$i<4;$i++){
-    $sum+=$a[$i];
-}
+// $sum=0;
+// for($i=0;$i<4;$i++){
+//     $sum+=$a[$i];
+// }
 
-echo "Sum: ",$sum;
+// echo "Sum: ",$sum;
 
-//associative array
+// //associative array
+// $data=[
+//     ['name'=>'php',
+//     'roll no'=>'37',
+//     'class'=>'btech',
+// ]
+// ];
+// print_r($data);
+
+// //pre tag is used in echo for format like terminal identation
+
+
+//printing the table
 $data=[
-    ['name'=>'php',
-    'roll no'=>'37',
-    'class'=>'btech',
-]
+    
+        ['ansh','54','80','78'],
+        ['ansh','54','80','78'],
+        ['ansh','54','80','78'],
+        ['ansh','54','80','78']
 ];
-print_r($data);
+
+echo "<table border='2' cellpadding='5' align='center' style='font-size:40px'>";
+
+    echo"<th colspan='5' bgcolor='red'>"."STUDENT MARK-SHEET";
+    echo"</th>";
+
+    foreach($data as $newvar){
+        echo"<tr>";
+        foreach($newvar as $value){
+            echo"<td>";
+            print_r($value);
+            echo"</td>";
+        }
+        echo"</tr>";
+    }
+echo"</table>";
+
+
+
+
 
 
 
