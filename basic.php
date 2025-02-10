@@ -220,7 +220,16 @@
 
 
 
+$n = readline('Number batao: ');
+if ($n < 2) echo("Invalid number\n");
 
+for ($i = 2; $i * $i <= $n; $i++) {
+    if ($n % $i == 0) echo("$n is not a prime number\n");exit();
+}
+
+echo "$n is a prime number\n";
+
+ 
 
 
 
