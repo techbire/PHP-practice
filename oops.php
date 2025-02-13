@@ -69,19 +69,254 @@
 
 
 
-class Car{
-    public $var;
-    public function setcolor($var){
-    $this->var=$var;
-    echo"our color is <p style='color: $var;'>$var</p>";
-}
-public function getcolor(){
-    return $this->var;
-}
-}
-$mycar= new Car();
-$mycar->setcolor("green");
-echo "car color is: ".$mycar->getcolor();
+// class Car{
+//     public $var;
+//     public function setcolor($var){
+//     $this->var=$var;
+//     echo"our color is <p style='color: $var;'>$var</p>";
+// }
+// public function getcolor(){
+//     return $this->var;
+// }
+// }
+// $mycar= new Car();
+// $mycar->setcolor("green");
+// echo "car color is: ".$mycar->getcolor();
 
+
+
+class Car{
+    public $color;
+        public function setColor($color){
+            $this->color=$color;
+        }
+public function getColor(){
+    return $this->color;
+}
+}
+ 
+$mycar=new Car();
+$mycar->setColor("RED");
+echo "the color of the car: ".$mycar->getColor();
 
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

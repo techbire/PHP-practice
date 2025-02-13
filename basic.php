@@ -220,18 +220,20 @@
 
 
 
-$n = readline('Number batao: ');
-if ($n < 2) echo("Invalid number\n");
+// $n = readline('Number batao: ');
+// if ($n < 2) echo("Invalid number\n");
 
-for ($i = 2; $i * $i <= $n; $i++) {
-    if ($n % $i == 0) echo("$n is not a prime number\n");exit();
-}
+// for ($i = 2; $i * $i <= $n; $i++) {
+//     if ($n % $i == 0) echo("$n is not a prime number\n");exit();
+// }
 
-echo "$n is a prime number\n";
+// echo "$n is a prime number\n";
 
  
 
-
-
+//ternary
+$number=10;
+$result=($number%2==0)?"even":"odd";
+echo"the number $number is $result.";
 ?>
                                                                                                                        
