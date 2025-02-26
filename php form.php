@@ -1,54 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple PHP Form</title>
-</head>
-<body>
-    <h1>Simple Form with PHP Validation</h1>
+<?php
 
-    <?php
-    // Variables to store user input and errors
-    $name = $email = $error = "";
 
-    // Check if the form is submitted
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (empty($_POST["name"]) || empty($_POST["email"])) {
-            $error = "Name and Email are required!";
-        } else {
-            $name = htmlspecialchars($_POST["name"]); // Prevent XSS
-            $email = htmlspecialchars($_POST["email"]);
+// //printing the table
+// $data=[
+//         ['Student','Mark-1','Mark-2','Mark-3'],
+//         ['ansh','54','80','78'],
+//         ['ansh','54','80','78'],
+//         ['ansh','54','80','78'],
+//         ['ansh','54','80','78']
+// ];
 
-            // Validate email format
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                $error = "Invalid email format!";
-            }
-        }
-    }
-    ?>
+// echo "<table border='2' cellpadding='5' align='center' style='font-size:40px'>";
 
-    <!-- Display error message -->
-    <?php if (!empty($error)): ?>
-        <p style="color: red;"><?php echo $error; ?></p>
-    <?php endif; ?>
+//     echo"<th colspan='5' bgcolor='red'>"."STUDENT MARK-SHEET";
+//     echo"</th>";
 
-    <!-- Form -->
-    <form method="POST" action="">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" value="<?php echo $name; ?>"><br><br>
+//     foreach($data as $newvar){
+//         echo"<tr>";
+//         foreach($newvar as $value){
+//             echo"<td>";
+//             print_r($value);
+//             echo"</td>";
+//         }
+//         echo"</tr>";
+//     }
+// echo"</table>";
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" value="<?php echo $email; ?>"><br><br>
 
-        <button type="submit">Submit</button>
-    </form>
 
-    <!-- Display result if no errors -->
-    <?php if ($_SERVER["REQUEST_METHOD"] == "POST" && empty($error)): ?>
-        <h2>Your Input:</h2>
-        <p>Name: <?php echo $name; ?></p>
-        <p>Email: <?php echo $email; ?></p>
-    <?php endif; ?>
-</body>
-</html>
+
+
+
+
+//employee table
+// $data=[
+//     [' ','Male employees','Female employees','Total employees','Factories'],
+//     ['1851','33','34','67','4'],
+//     ['1861','33','34','67','4'],
+//     ['1871','33','34','67','4'],
+//     ['1881','33','34','67','4'],
+//     ['1891','33','34','67','4'],
+//     ['1901','33','34','67','4'],
+// ];
+
+
+// echo "<table border='2' cellpadding='8' style='font-size:40px'>";
+
+//     foreach($data as $newvar){
+//         echo"<tr >";
+//         foreach($newvar as $value){
+//             echo"<td style='font-size:40px; text-align: center;'>";
+//             print_r($value);
+//             echo"</td>";
+//         }
+//         echo"</tr>";
+//     }
+// echo"</table>";
+
+
+// $data=["first","second","third"];
+// $new=["one",'two','three'];
+// print_r($data);
+// echo "<br>";
+// array_pop($data);
+// echo "<br>";
+// print_r($data);
+// echo "<br>";
+
+// array_shift($data);
+// print_r($data);
+// echo"<br>";
+// array_push($data,"forth");
+// print_r($data);
+// echo"<br>";
+// array_unshift($data,"zeroth");
+// print_r($data);
+
+
+
+
+
+
+$data=[['name','219','229','221'],['aman','8','9','6'],['ishu','3','4','5'],['siza','3','4','4']];
+
+// echo "<table border='2' cellpadding='8' style='font-size:40px'>";
+
+//     foreach($data as $newvar){
+//         echo"<tr >";
+//         foreach($newvar as $value){
+//             echo"<td style='font-size:40px; text-align: center;'>";
+//             print_r($value);
+//             echo"</td>";
+//         }
+//         echo"</tr>";
+//     }
+// echo"</table>";
+
+echo "<table border='4' cellpadding='6' style='font-size:40px'>";
+foreach($data as $row){
+echo"<tr>";
+foreach($row as $col){
+echo"<td>";
+print_r($col);
+echo"</td>";
+}
+echo"</tr>";
+}
+echo"</table>";
+
+
+
+
+
+
+?>
