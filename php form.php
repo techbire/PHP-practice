@@ -1,7 +1,7 @@
 <?php
 
 
-// //printing the table
+//printing the table
 // $data=[
 //         ['Student','Mark-1','Mark-2','Mark-3'],
 //         ['ansh','54','80','78'],
@@ -11,23 +11,17 @@
 // ];
 
 // echo "<table border='2' cellpadding='5' align='center' style='font-size:40px'>";
+// echo "<th colspan='5' bgcolor='red'>STUDENT MARK-SHEET</th>";
 
-//     echo"<th colspan='5' bgcolor='red'>"."STUDENT MARK-SHEET";
-//     echo"</th>";
-
-//     foreach($data as $newvar){
-//         echo"<tr>";
-//         foreach($newvar as $value){
-//             echo"<td>";
-//             print_r($value);
-//             echo"</td>";
-//         }
-//         echo"</tr>";
+// foreach ($data as $row) {
+//     echo "<tr>";
+//     foreach ($row as $col) {
+//         echo "<td>$col</td>";
 //     }
-// echo"</table>";
+//     echo "</tr>";
+// }
 
-
-
+// echo "</table>";
 
 
 
@@ -46,16 +40,15 @@
 
 // echo "<table border='2' cellpadding='8' style='font-size:40px'>";
 
-//     foreach($data as $newvar){
-//         echo"<tr >";
-//         foreach($newvar as $value){
-//             echo"<td style='font-size:40px; text-align: center;'>";
-//             print_r($value);
-//             echo"</td>";
-//         }
-//         echo"</tr>";
+// foreach ($data as $row) {
+//     echo "<tr>";
+//     foreach ($row as $col) {
+//         echo "<td style='font-size:40px; text-align:center; padding:10px;'>$col</td>";
 //     }
-// echo"</table>";
+//     echo "</tr>";
+// }
+
+// echo "</table>";
 
 
 // $data=["first","second","third"];
@@ -81,6 +74,9 @@
 
 
 
+
+
+
 $data=[['name','219','229','221'],['aman','8','9','6'],['ishu','3','4','5'],['siza','3','4','4']];
 
 // echo "<table border='2' cellpadding='8' style='font-size:40px'>";
@@ -88,13 +84,15 @@ $data=[['name','219','229','221'],['aman','8','9','6'],['ishu','3','4','5'],['si
 //     foreach($data as $newvar){
 //         echo"<tr >";
 //         foreach($newvar as $value){
-//             echo"<td style='font-size:40px; text-align: center;'>";
-//             print_r($value);
-//             echo"</td>";
+//             echo"<td style='font-size:40px; text-align: center;'>$value</td>";
 //         }
 //         echo"</tr>";
 //     }
 // echo"</table>";
+
+
+
+
 
 echo "<table border='4' cellpadding='6' style='font-size:40px'>";
 foreach($data as $row){
